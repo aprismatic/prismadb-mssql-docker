@@ -1,3 +1,1 @@
-docker build `
--t cheziyi/mssql-server-windows-developer-fulltext:latest `
--f "Dockerfile"  .
+docker build -t aprismatic/mssql-server-windows-developer-fulltext:latest .
