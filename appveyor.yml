@@ -3,8 +3,13 @@ skip_tags: true
 branches:
   only:
     - master
-image: "Visual Studio 2017"
+image: "Windows Server 2019"
+init:
+  - ps: $env:DockerHubPassword | docker login -u bazzilic --password-stdin
 build_script:
   - ps: ./build.ps1
 deploy_script:
   - ps: ./deploy.ps1
+environment:
+  DockerHubPassword:
+    secure: mPgo49gMUWom9++QXl4zyA==

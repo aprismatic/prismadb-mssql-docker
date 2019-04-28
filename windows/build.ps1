@@ -1,1 +1,0 @@
-docker build -t aprismatic/mssql-server-windows-developer-fulltext:latest .
